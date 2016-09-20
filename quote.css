@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e74c3c;
+    color: #e74c3c;
+}
+
+#quote-box {
+    height: auto;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: #fff;
+    width: 500px;
+    border-radius: 3px;
+    overflow:hidden;
+}
+
+#quote-box:after
+{
+    content:".";
+    display:block;
+    clear:both;
+    visibility:hidden;
+}
+
+#quote {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 26px;
+    padding: 40px 40px 20px 40px;
+}
+
+#text {
+    padding-left: 15px;
+}
+
+#author {
+    font-family: 'David Libre', serif;
+    padding: 0 40px 0 40px;
+    text-align: right;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.button {
+    border:none;
+    border-radius:3px;
+    color:#fff;
+    background-color:#e74c3c;
+    outline:none;
+    font-size:1em;
+    margin-top:15px;
+    padding: 10px 25px 10px 25px;
+    opacity:1;
+}
+
+.button:hover {
+    opacity:0.8;
+    cursor: pointer;
+    cursor: hand;
+}
+
+#twit {
+    float: left;
+    margin-left: 25px;
+}
+
+#new-quote {
+    float:right;
+    margin-right: 25px;
+    font-family: 'David Libre', serif;
+}
+
+p {
+    color: #fff;
+    font-family: 'David Libre', serif;
+    text-align: center;
+}
