@@ -6,8 +6,8 @@ function randomize(min, max){
 }
 
 function success(data){
-    var quoteText = data.quoteText;
-    var quoteAuthor = data.quoteAuthor === '' ? 'Unknown' : data.quoteAuthor;
+    var quoteText = data['quote'];
+    var quoteAuthor = data['character'];
 
     var link = 'http://twitter.com/share?text=' + quoteText;
 
@@ -20,7 +20,10 @@ $(document).ready(function(){
 
     var colors = ['#0099cc', '#16a085', '#27ae60', '#2c3e50', '#f39c12', '#e74c3c', '#9b59b6', '#FB6964', '#342224', "#472E32", "#BDBB99", "#77B1A9", "#73A857"];
 
-    var apiCall = 'http://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?';
+    /*
+    var apiCall = 'https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?';
+    */
+    var apiCall = 'https://got-quotes.herokuapp.com/quotes';
 
     $.getJSON(apiCall, success);
 
