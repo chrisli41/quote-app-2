@@ -18,7 +18,7 @@ function success(data){
 
 $(document).ready(function(){
 
-    var colors = ['#0099cc', '#16a085', '#27ae60', '#2c3e50', '#f39c12', '#e74c3c', '#9b59b6', '#FB6964', '#342224', "#472E32", "#BDBB99", "#77B1A9", "#73A857"];
+    var colors = ['#336E7B', '#16a085', '#2c3e50', '#e74c3c', '#FB6964', '#049372', '#D91E18', '#6C7A89'];
 
     /*
     var apiCall = 'https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?';
@@ -32,14 +32,13 @@ $(document).ready(function(){
         var color = randomize(0, colors.length - 1);
 
         $.getJSON(apiCall, success);
-        
-        $("html body").animate({
-            backgroundColor: colors[color],
-            color: colors[color]
-        }, 1000);
 
         $("#new-quote, #twit").animate({
             backgroundColor: colors[color]
+        }, 1000);
+
+        $("#quote, #author").animate({
+            color: colors[color]
         }, 1000);
 
         }

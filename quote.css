@@ -3,8 +3,24 @@
 }
 
 body {
-    background-color: #e74c3c;
+    background-color: #E4F1FE;
     color: #e74c3c;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-family: 'Raleway', serif;
+    font-size: 30px;
+    color: #484c61;
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+
+h1 span {
+    font-weight: 900;
 }
 
 #quote-box {
